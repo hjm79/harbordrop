@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HarborDrop — Privacy Policy</title>
+   <style>
+      body {
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         max-width: 700px;
+         margin: 40px auto;
+         padding: 0 20px;
+         color: #333;
+         line-height: 1.7;
+      }
+
+      h1 {
+         color: #0f3460;
+      }
+
+      h2 {
+         color: #16213e;
+         margin-top: 2em;
+      }
+
+      .date {
+         color: #888;
+         font-size: 14px;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>HarborDrop — Privacy Policy</h1>
+   <p class="date">Last updated: February 13, 2026</p>
+
+   <h2>Overview</h2>
+   <p>HarborDrop is a browser extension that detects downloadable media on web pages and forwards download requests to
+      the HarborDrop macOS application via Native Messaging. We are committed to protecting your privacy.</p>
+
+   <h2>Data Collection</h2>
+   <p><strong>HarborDrop does NOT collect, store, transmit, or share any personal data.</strong></p>
+   <ul>
+      <li>No browsing history is stored or transmitted to any server.</li>
+      <li>No analytics or tracking services are used.</li>
+      <li>No user accounts or registration required.</li>
+   </ul>
+
+   <h2>Data Usage</h2>
+   <p>The extension processes the following data <strong>locally on your device only</strong>:</p>
+   <ul>
+      <li><strong>Media URLs</strong>: Detected from network requests to display in the popup. Cleared when the tab is
+         closed or navigated.</li>
+      <li><strong>Cookies</strong>: Read for the current download URL only and forwarded to the local macOS app to
+         authenticate downloads. Never sent to any external server.</li>
+      <li><strong>Page Title</strong>: Read from the active tab to use as a suggested filename. Only sent to the local
+         macOS app.</li>
+      <li><strong>User Preferences</strong>: The auto-intercept toggle state is stored locally using
+         <code>chrome.storage.local</code>.
+      </li>
+   </ul>
+
+   <h2>Permissions</h2>
+   <table style="width:100%; border-collapse: collapse;">
+      <tr style="background:#f5f5f5;">
+         <th style="text-align:left; padding:8px; border:1px solid #ddd;">Permission</th>
+         <th style="text-align:left; padding:8px; border:1px solid #ddd;">Purpose</th>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">downloads</td>
+         <td style="padding:8px; border:1px solid #ddd;">Intercept and redirect downloads to HarborDrop app</td>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">activeTab</td>
+         <td style="padding:8px; border:1px solid #ddd;">Access current tab info for media detection</td>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">cookies</td>
+         <td style="padding:8px; border:1px solid #ddd;">Forward authentication cookies to local app for download</td>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">contextMenus</td>
+         <td style="padding:8px; border:1px solid #ddd;">Add "Download with HarborDrop" context menu</td>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">nativeMessaging</td>
+         <td style="padding:8px; border:1px solid #ddd;">Communicate with the local macOS HarborDrop app</td>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">storage</td>
+         <td style="padding:8px; border:1px solid #ddd;">Store user preference (intercept toggle)</td>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">webRequest</td>
+         <td style="padding:8px; border:1px solid #ddd;">Detect media files (video/audio) from network traffic</td>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">tabs</td>
+         <td style="padding:8px; border:1px solid #ddd;">Read tab title and URL for download context</td>
+      </tr>
+      <tr>
+         <td style="padding:8px; border:1px solid #ddd;">host_permissions (*://*/*)</td>
+         <td style="padding:8px; border:1px solid #ddd;">Detect media on any website the user visits</td>
+      </tr>
+   </table>
+
+   <h2>Third-Party Services</h2>
+   <p>HarborDrop does not use any third-party services, analytics, or advertising. All communication is strictly between
+      the browser extension and the local HarborDrop macOS application.</p>
+
+   <h2>Data Retention</h2>
+   <p>Detected media URLs are stored in memory only and are cleared when the browser tab is closed or navigated to a new
+      page. No data is persisted beyond the browser session, except for the user's intercept toggle preference.</p>
+
+   <h2>Contact</h2>
+   <p>If you have questions about this privacy policy, please open an issue on our <a
+         href="https://github.com/hjm79/harbordrop">GitHub repository</a>.</p>
+</body>
+
+</html>
